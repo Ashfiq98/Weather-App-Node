@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Weather App</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #weather-container {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        input {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 80%;
+        }
+        
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 80%;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        #weather-result {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        
+        #weather-result h1 {
+            color: #333;
+            font-size: 24px;
+        }
+        
+        #weather-result h2 {
+            color: rgb(0, 142, 155);
+            font-size: 18px;
+        }
+        
+        #weather-result img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 8px;
+            /* Optional: Add border-radius for rounded corners */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        #temp {
+            color: rgb(242, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="weather-container">
+        <h1>Weather App</h1>
+
+        <form id="weather-form" action="/" method="post">
+
+            <input type="text" name="city" placeholder="city" required>
+            <button type="submit">Get Weather</button>
+        </form>
+
+    </div>
+    <footer id="foot">&copy; ashfiqulalam86@gmail.com | 2023</footer>
+</body>
+
+</html>
